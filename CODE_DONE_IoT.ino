@@ -177,15 +177,15 @@ if (logamTerdeteksi && nonLogamTerdeteksi) {
   }
 
   if (statusMetal != "SAMPAH PENUH") {
-    myServoLogam.write(servoOpenAngle);  // Buka tutup LOGAM
+    myServoLogam.write(servoOpenAngle);  // Buka LOGAM
   } else {
-    myServoLogam.write(servoCloseAngle);  // Tutup LOGAM jika penuh
+    myServoLogam.write(servoCloseAngle);  // Tutup LOGAM 
   }
 
   if (statusNonMetal != "SAMPAH PENUH") {
-    myServoNonLogam.write(servoCloseAngle);  // Buka tutup NON-LOGAM
+    myServoNonLogam.write(servoCloseAngle);  // Buka NON-LOGAM
   } else {
-    myServoNonLogam.write(servoOpenAngle);  // Tutup NON-LOGAM jika penuh
+    myServoNonLogam.write(servoOpenAngle);  // Tutup NON-LOGAM 
   }
 
   delay(3000);
